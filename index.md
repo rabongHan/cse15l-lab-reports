@@ -1,4 +1,4 @@
-# Lab Report
+## Lab Report
 *by Jaewon Han*
 
 - [Instagram](https://www.instagram.com/jwonn117/)
