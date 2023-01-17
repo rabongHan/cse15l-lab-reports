@@ -47,3 +47,8 @@ Now you're connected to the remote server.
 ### Part 4 - Some Commands
 It's time to use some commands. Try running the commands like `cd`,`ls`,`pwd`,`cp`, and etc.
 
+The below image is how you can use commands just for example. 
+![](/images/Commands-1.png)
+
+You can log out of the remote server by using the command `exit` or pressing Ctrl-D.
+![](/images/Commands-2.png)
