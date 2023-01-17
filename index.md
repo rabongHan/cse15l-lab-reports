@@ -23,6 +23,18 @@ and install it on your personal computer/laptop. But, you don't have to install 
 If it is installed successfully, you could see a window that looks similar to the image above. (It might have different colors or menus.)
 
 ### Part 3 - Remotely Connecting
+Now we'll see how to use Vscode and terminal to connect to a remote computer(server) to work there. 
+
+#### 1st step: installing git and git bash for Windows.
+[https://gitforwindows.org/](Git for Windows)
+[https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994](How to use Bash in VScode)
+
+#### 2nd step: open terminal in VScode (For Mac users, begin from here)
+To open terminal in VScode, you can press Ctrl or Command + ~, or use the Terminal | New Terminal menu option.
+```
+$ ssh cs15lwi23????@ieng6.ucsd.edu
+```
+You should replace `????` with your course-specific account.
 
 
 ### Part 4 - Some Commands
