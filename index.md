@@ -36,6 +36,12 @@ $ ssh cs15lwi23????@ieng6.ucsd.edu
 ```
 You should replace `????` with your course-specific account.
 
+Type `yes` and press enter, then give your password. 
+
+Then you'll see the image like below.
+![](/images/RemotelyConnecting-1.png)
+
+Now you're connected to the remote server. 
 
 ### Part 4 - Some Commands
 
