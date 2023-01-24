@@ -46,8 +46,13 @@ Now you're connected to the remote server.
 
 ### Part 4 - Some Commands
 It's time to use some commands. Try running the commands like `cd`,`ls`,`pwd`,`cp`, and etc.
+#### Explanation of commands
+⋅⋅* `cd` : "Change Directory" Used to switch the current working directory to the given path.
+⋅⋅* `ls` : "List" Used to list the files and folders the given path.
+⋅⋅* `pwd` : "Print Working Directory" Used to display the current working directory.
+⋅⋅* `cp` : "Copy" Used to copy files or gorup of files or directory. 
 
-The below image is how you can use commands just for example. 
+The below images are how you can use commands. They are just for example. Feel free to use in your own way. 
 ![](/images/Commands-1.png)
 
 You can log out of the remote server by using the command `exit` or pressing Ctrl-D.
