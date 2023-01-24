@@ -59,16 +59,43 @@ $ cd
 ```
 Since we don't specify where to change directory, it is still in same directory.
 ```
-cd ~
+$ cd ~
 ```
 `~` is a directory where a user's files are stores, which we call as "Home Directory". So nothing changed.
 ```
-ls
+$ ls
 ```
 There is one directory shown: `perl5`
+```
+$ cd perl5
+```
+change directory to perl5. We can now see we are in the `perl5` directory.
+```
+$ cd .. 
+```
+`..` is a "Parent Directory". So, we are going back to the original directory. 
 
 ![](/images/Commands-1-2.png)
+```
+$ ls -lat
+```
+`ls` is "List" as we know. Using `-` symbol, we can specifiy which files and directories to be listed. 
+`l` is a list with long format. `a` is all files including hidden files. `t` is sort by time&date. 
+Thus, `ls -lat` means listing all files including hidden files in long format, sorted by time and date. 
+We can notice that there were actually 124 different files and directories (not just perl5!)
 ![](/images/Commands-1-3.png)
+```
+$ cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
+```
+We are now in the working directory `/home/linux/ieng6/cs15lwi23/cs15lwi23abo` (You might have different 3 alphabets after `cs15lwi23`.
+We just copied file called `hello.txt` from `../public/hello.txt`. Before typing this command, try to find `hello.txt` in your directory. 
+Then, after typing this command, try to find the same file in your directory. 
+```
+$ cat /home/linux/ieng6/cs15lwi23/public/hello.txt
+```
+`cat` command reads data from the file and gives their content as output. We can see the content of `hello.txt`.
+But you should know that we access this file through `../public/hello.txt` not our working directory. 
+(We have same file in our working directory too!)
 
 You can log out of the remote server by using the command `exit` or pressing Ctrl-D.
 ![](/images/Commands-2.png)
