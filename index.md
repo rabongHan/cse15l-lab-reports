@@ -53,7 +53,22 @@ It's time to use some commands. Try running the commands like `cd`,`ls`,`pwd`,`c
 * `cp` : "Copy" Used to copy files or gorup of files or directory. 
 
 The below images are how you can use commands. They are just for example. Feel free to use in your own way. 
-![](/images/Commands-1.png)
+![](/images/Commands-1-1.png)
+```
+$ cd
+```
+Since we don't specify where to change directory, it is still in same directory.
+```
+cd ~
+```
+`~` is a directory where a user's files are stores, which we call as "Home Directory". So nothing changed.
+```
+ls
+```
+There is one directory shown: `perl5`
+
+![](/images/Commands-1-2.png)
+![](/images/Commands-1-3.png)
 
 You can log out of the remote server by using the command `exit` or pressing Ctrl-D.
 ![](/images/Commands-2.png)
