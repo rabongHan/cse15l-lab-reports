@@ -1,19 +1,26 @@
-## Week 1 Lab Report
+## Week 2 Lab Report
 by Jaewon Han 
 
-Throughout this 15L course, we'll use course-specific account. 
+This post is a report about servers and bugs.
 
-This post is a tutorial about how to log into a course-specific account on `ieng6`.
+### Part 1 - Web Server called `StringServer`
+![](/images/Part_1_1.png)
+The image above is the code for my `StringServer`. There are two classes inside the file: Handler class and StringServer class. 
+As we type `java StringServer.java 9500`, we can access to our Web Server using `https://localhost:9500`.
 
-### Part 1 - CSE15L Account
-First of all, you should check your course-specific account for CSE15L.
+![](/images/Part_1_2_1.png)
+After typing 
+```
+/add-message?s=Hello I'm Jaewon
+```
+the method `handleRequest`inside the `Handler_search` is called. `handlerRequest` method reads the `url` input and uses that input to work its task. This method decide which path the user is now using. If the path includes `/add-message`, then it determines if the path has correct queries. (In this case, `?s=<String>`). Then, put the strings inside the query section into the variable called `strs`, which refers to ArrayList in String type. Then, everytime we request the path which includes `/add-message`, the page shows the strings that has been added. In this case, it was first request of `/add-message`, so the page only shows `Hello I'm Jaewon`.
 
-You can find your account using this link: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
-
-After logging into the website above, you should change your account to the additional account starting with `cse15l`.
-![](/images/cse15l-account-1.png)
-
-Then, you have to reset the password. If you've reset the password, you have to wait a few minutes(usually 15 mins) for it to take effect. 
+![](/images/Part_1_2_2.png)
+After typing 
+```
+/add-message?s=Nice to meet you
+```
+the method `handleRequest` is called again. This time, variable `strs` has one more elements - `"Nice to meet you"`. Thus, the page shows two strings in each line.
 
 ### Part 2 - VScode
 Now It's time to install the Visual Studio Code. Go to the Website [https://code.visualstudio.com/](https://code.visualstudio.com/), and download
