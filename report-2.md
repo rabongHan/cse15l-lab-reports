@@ -68,3 +68,4 @@ static int[] reversed(int[] arr) {
 ```
 
 ### Part 3 - What I've learned :)
+Throughout week 2 and week 3, I could learn lots of things that I've never experienced before. Firstly, I could learn how to use git desktop and clone my repositories. It was really helpful as I can make checkpoints during changing/improving my code, especially during the lab class. I would use this git desktop in future too. Secondly, I could learn the basic conecpt of web server by learning URL handler and server classes. Lastly, I could learn the difference between the symptom and the bug. What I was surprised was that, even though the actual value of code is error, it doesn't necessarily means it is symptom or bug. I love this class - `CSE15L` - so much!
