@@ -18,7 +18,7 @@ We'll look two examples each for four different command-line options of the comm
 #### 1st Option: `-name` 
 Command-line option called `-name` can be used when we know the name of a file, but we don't know the specific place(directory). 
 For 1st example here, we refers to [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html).
-For 2nd example here, we refers to [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]([https://man7.org/linux/man-pages/man1/grep.1.html](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/))
+For 2nd example here, we refers to [https://www.geeksforgeeks.org/find-command-in-linux-with-examples](https://www.geeksforgeeks.org/find-command-in-linux-with-examples)
 
 ```
 $ find ./written_2 -name "ch1.txt"
