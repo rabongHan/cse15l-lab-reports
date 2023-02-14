@@ -40,7 +40,7 @@ Command-line option called `-exec CMD` allows us to execute commands on the resu
 For 1st and 2nd example here, we refers to [https://www.baeldung.com/linux/find-exec-command](https://www.baeldung.com/linux/find-exec-command).
 
 ```
-$ find ./written_2 -name "ch1.txt" -exec file {} \;"
+$ find ./written_2 -name "ch1.txt" -exec file {} \;
 ```
 This command-line allows us to run the `file` command on the list of files which have `ch1` as the name of the file. 
 It is useful as we can execute some commands directly on the files that we want to apply.
@@ -54,5 +54,41 @@ This command-line also finds the files which have name `ch1`. However, the diffe
 ![](/images/2_exec_2.png)
 
 #### 3rd Option: `-type` 
+Command-line option called `-type` allows us to find the files by type. 
+For 1st and 2nd example here, we refers to [https://www.redhat.com/sysadmin/linux-find-command](https://www.redhat.com/sysadmin/linux-find-command) and [https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/).
+
+```
+$ find ./written_2 -type d 
+```
+This command-line allows us to find only the listing of directories in a path. Here, `d` refers to the directories. 
+It is useful when we only want to list directories root in a path that we wrote. 
+The below is the output of the command above.
+![](/images/3_type_1.png)
+
+```
+$ find ./written_2 -type f
+```
+This command-line allows us to find only the regular files in a path. Here, 'f' refers to the regular file.
+It is useful when we only want to list regular files except directories and other things in a path.
+The below is the output of the command above. 
+![](/images/3_type_2.png)
 
 #### 4th Option: `-ls` 
+Command-line option called `-ls` allows us to find the files by type. 
+For 1st and 2nd example here, we refers to [https://www.redhat.com/sysadmin/linux-find-command](https://www.redhat.com/sysadmin/linux-find-command).
+
+```
+$ find ./written_2 -type d 
+```
+This command-line allows us to find only the listing of directories in a path. Here, `d` refers to the directories. 
+It is useful when we only want to list directories root in a path that we wrote. 
+The below is the output of the command above.
+![](/images/3_type_1.png)
+
+```
+$ find ./written_2 -type f
+```
+This command-line allows us to find only the regular files in a path. Here, 'f' refers to the regular file.
+It is useful when we only want to list regular files except directories and other things in a path.
+The below is the output of the command above. 
+![](/images/3_type_2.png)
