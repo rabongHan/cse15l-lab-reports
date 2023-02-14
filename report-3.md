@@ -1,4 +1,4 @@
-## Week 3 Lab Report
+## Week 5 Lab Report 3
 by Jaewon Han 
 
 This post is a report about the different ways to use researching commands
