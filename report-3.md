@@ -9,35 +9,30 @@ In this post, we'll focus on a `find` command.
 
 ### Command - `find` 
 The `find` searches for files in a directory hierarchy.
+
 [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 According to the link above, there are different command-line options to use the command `find`.
-We'll look two examples each for four different command-line options of the command `find`.
+We'll look two examples each for four different command-line options of the command `find`. In this report, we'll use `ieng6` server to demonstrate how the command-line options can be used. 
 
 #### 1st Option: `-name` 
-![](/images/Part_1_2_1.png)
-After typing 
+Command-line option called `-name` can be used when we know the name of a file, but we don't know the specific place(directory). 
+For 1st example here, we refers to [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html).
+For 2nd example here, we refers to [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]([https://man7.org/linux/man-pages/man1/grep.1.html](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/))
 ```
-/add-message?s=Hello I'm Jaewon
+$ find ./written_2 -name "ch1.txt"
 ```
-the method `handleRequest`inside the `Handler_search` is called. `handlerRequest` method reads the `url` input and uses that input to work its task. This method decide which path the user is now using. If the path includes `/add-message`, then it determines if the path has correct queries. (In this case, `?s=<String>`). Then, put the strings inside the query section into the variable called `strs`, which refers to ArrayList in String type. Then, everytime we request the path which includes `/add-message`, the page shows the strings that has been added. In this case, it was first request of `/add-message`, so the page only shows `Hello I'm Jaewon`.
-
-![](/images/Part_1_2_2.png)
-After typing 
-```
-/add-message?s=Nice to meet you
-```
-the method `handleRequest` is called again. This time, variable `strs` has one more elements - `"Nice to meet you"`. Thus, the page shows two strings in each line.
+This command-line option allows us to find to search files called "ch1.txt" from the `./written_2`. 
+It is useful when we want to know the exact location of the files. 
+The below is the output of the command above.
+![](/images/1_name_1.png)
 
 ```
-static int[] reversed(int[] arr) {
-  int[] newArray = new int[arr.length];
-  for(int i = 0; i < arr.length; i += 1) {
-    arr[i] = newArray[arr.length - i - 1];
-  }
-  return arr;
-} 
+$ find ./written_2 -name *ch1*.txt
 ```
+This command-line option does the same task with the first example. However, the difference is we're now using the pattern.
+The command above will give all files which includes `ch1` in the name and have `.txt` at the end. The below is the output.
+![](/images/1_name_2.png)
 
 #### 2nd Option: `-exec CMD` 
 
