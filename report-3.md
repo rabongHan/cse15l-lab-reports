@@ -73,22 +73,22 @@ It is useful when we only want to list regular files except directories and othe
 The below is the output of the command above. 
 ![](/images/3_type_2.png)
 
-#### 4th Option: `-ls` 
-Command-line option called `-ls` allows us to find the files by type. 
-For 1st and 2nd example here, we refers to [https://www.redhat.com/sysadmin/linux-find-command](https://www.redhat.com/sysadmin/linux-find-command).
+#### 4th Option: `-size` 
+Command-line option called `-size` allows us to find the files by size.
+For 1st and 2nd example here, we refers to [https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size](https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size).
 
 ```
-$ find ./written_2 -type d 
+$ find ./written_2 -size 6k
 ```
-This command-line allows us to find only the listing of directories in a path. Here, `d` refers to the directories. 
-It is useful when we only want to list directories root in a path that we wrote. 
+This command-line allows us to find the files which have 6 kilobytes of size. Here, `k` refers to the `kilobytes`.
+It is useful when we want to categorize the files based on the size or if the system requires certain amount of size. 
 The below is the output of the command above.
-![](/images/3_type_1.png)
+![](/images/4_size_1.png)
 
 ```
-$ find ./written_2 -type f
+$ find ./written_2 -size +6k -size -8k
 ```
-This command-line allows us to find only the regular files in a path. Here, 'f' refers to the regular file.
+This command-line allows us to find the files which have greater than 6 kilobytes of size but smaller than 8 kilobytes of size. Here, `k` refers to the `kilobytes`.
 It is useful when we only want to list regular files except directories and other things in a path.
 The below is the output of the command above. 
-![](/images/3_type_2.png)
+![](/images/4_size_2.png)
