@@ -19,10 +19,11 @@ We'll look two examples each for four different command-line options of the comm
 Command-line option called `-name` can be used when we know the name of a file, but we don't know the specific place(directory). 
 For 1st example here, we refers to [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html).
 For 2nd example here, we refers to [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]([https://man7.org/linux/man-pages/man1/grep.1.html](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/))
+
 ```
 $ find ./written_2 -name "ch1.txt"
 ```
-This command-line option allows us to find to search files called "ch1.txt" from the `./written_2`. 
+This command-line allows us to find to search files called "ch1.txt" from the `./written_2`. 
 It is useful when we want to know the exact location of the files. 
 The below is the output of the command above.
 ![](/images/1_name_1.png)
@@ -30,11 +31,27 @@ The below is the output of the command above.
 ```
 $ find ./written_2 -name *ch1*.txt
 ```
-This command-line option does the same task with the first example. However, the difference is we're now using the pattern.
+This command-line does the same task with the first example. However, the difference is we're now using the pattern.
 The command above will give all files which includes `ch1` in the name and have `.txt` at the end. The below is the output.
 ![](/images/1_name_2.png)
 
 #### 2nd Option: `-exec CMD` 
+Command-line option called `-exec CMD` allows us to execute commands on the resulting paths. 
+For 1st and 2nd example here, we refers to [https://www.baeldung.com/linux/find-exec-command](https://www.baeldung.com/linux/find-exec-command).
+
+```
+$ find ./written_2 -name "ch1.txt" -exec file {} \;"
+```
+This command-line allows us to run the `file` command on the list of files which have `ch1` as the name of the file. 
+It is useful as we can execute some commands directly on the files that we want to apply.
+The below is the output of the command above.
+![](/images/2_exec_1.png)
+
+```
+$ find ./written_2 -name "ch1.txt" -exec echo {} +
+```
+This command-line also finds the files which have name `ch1`. However, the difference is we used `echo {} +` execution as command-line option, which allows us to show all of the expressions' results concatenated and passed as a whole to the `-exec` command, which will run only once. The below is the output
+![](/images/2_exec_2.png)
 
 #### 3rd Option: `-type` 
 
