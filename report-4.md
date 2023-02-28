@@ -3,7 +3,6 @@ by Jaewon Han
 
 This post is a report that reproduces the task from the competition during the lab
 Competition had 9 steps, and this report includes steps from 4 to 9.
-[https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 ### Step 4 - "Log into ieng6"
 ![](/images/step4_1.png)
