@@ -8,7 +8,7 @@ Competition had 9 steps, and this report includes steps from 4 to 9.
 ### Step 4 - "Log into ieng6"
 ![](/images/step4_1.png)
 > *Keys pressed*: ``` ssh cs15lwi23abo@ieng6.ucsd.edu<enter> ```
-> I just typed all texts to log into ieng6.
+>> I just typed all texts to log into ieng6.
 
 ### Step 5 - "Clone your fork of the repository from your Github account" 
 ![](/images/step5_1.png)
