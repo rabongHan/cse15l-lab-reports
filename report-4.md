@@ -7,13 +7,13 @@ Competition had 9 steps, and this report includes steps from 4 to 9.
 
 ### Step 4 - "Log into ieng6"
 ![](/images/step4_1.png)
-> *Keys pressed*: ``` ssh cs15lwi23abo@ieng6.ucsd.edu<enter> ```
->> I just typed all texts to log into ieng6.
+>   *Keys pressed*: ``` ssh cs15lwi23abo@ieng6.ucsd.edu<enter> ```
+>>  I just typed all texts to log into ieng6.
 
 ### Step 5 - "Clone your fork of the repository from your Github account" 
 ![](/images/step5_1.png)
-> *Keys pressed*: ``` git<space>clone<space><command + v><enter> ```
->> I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+>   *Keys pressed*: ``` git<space>clone<space><command + v><enter> ```
+>>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
 
 ![](/images/step5_2.png)
 * [1] `ls`
@@ -29,6 +29,13 @@ Competition had 9 steps, and this report includes steps from 4 to 9.
 >>  I typed `ls` to check which files and direcotries are inside the `lab7` folder. This was to see certain file's name later on step 6. 
 
 ### Step 6 - "Run the tests, demonstrating that they fail" 
+![](/images/step6_1.png)
+>   *Keys pressed*: ``` <up><up><up><up><up><up><up><up><up><up><enter> ```
+>>  The above command was 10 up in the search history, so I used up arrow to access it. 
+  
+![](/images/step6_2.png)
+>   *Keys pressed*: ``` <up><up><up><up><up><up><up><up><up><up><space>ListExamplesTests<enter> ```
+>>  The above command was 10 up in the search history, so I used up arrow to access it. Then, I typed the file name `ListExamplesTests` at the last part to do JUnit test of that file. 
 
 ### Step 7 - "Edit the code file to fix the failing test" 
 
