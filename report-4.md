@@ -7,13 +7,13 @@ Competition had 9 steps, and this report includes steps from 4 to 9.
 
 ### Step 4 - "Log into ieng6"
 ![](/images/step4_1.png)
-  *Keys pressed*: ``` ssh cs15lwi23abo@ieng6.ucsd.edu<enter> ```
-  I just typed all texts to log into ieng6.
+> *Keys pressed*: ``` ssh cs15lwi23abo@ieng6.ucsd.edu<enter> ```
+> I just typed all texts to log into ieng6.
 
 ### Step 5 - "Clone your fork of the repository from your Github account" 
 ![](/images/step5_1.png)
-  *Keys pressed*: ``` git<space>clone<space><command + v><enter> ```
-  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+> *Keys pressed*: ``` git<space>clone<space><command + v><enter> ```
+> I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
 
 ![](/images/step5_2.png)
   [1] `ls`
