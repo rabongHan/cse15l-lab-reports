@@ -39,8 +39,8 @@ Competition had 9 steps, and this report includes steps from 4 to 9.
 ### Step 7 - "Edit the code file to fix the failing test" 
 ![](/images/step7_1.png)
 ![](/images/vi_1.png)
->   *Keys pressed*: ``` vi<space>L<tab>.j<tab><enter> ```
->>  I used auto completion using `tab`. I access to file to edit using `vi` editor. The focus was at the position where the error exists.
+>   *Keys pressed*: ``` vi<space>L<tab>.j<tab><enter><down><down><down><down><down><down><left><left><left><left><left> ```
+>>  I used auto completion using `tab`. I access to file to edit using `vi` editor. To move the cursor focus to the error line, I pressed `down` key 6 times and `left` key 5 times. Then, cursor moved to the position where image shows. 
   
 ![](/images/vi_2.png)
 >   *Keys pressed*: ``` i ```
