@@ -71,7 +71,7 @@ In this section, I'll explain how each line works and why it is useful.
 ``` 
 1   CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' 
 ``` 
->>  The line 1 is for the JUnit library path. This grading script is using JUnit to test student code, so this line is necessary for using JUnit. 
+>>  The line 1 is for the `JUnit` library path. This grading script is using `JUnit` to test student code, so this line is necessary for using `JUnit`. 
 
 ``` 
 3   rm -rf student-submission 
@@ -119,26 +119,46 @@ In this section, I'll explain how each line works and why it is useful.
 33  cp TestListExamples.java tests/
 34  cp -R ./lib tests/
 ``` 
->>  The line 31 makes new directory called `tests`. This 
+>>  The line 31 makes new directory called `tests`. This directory will store `JUnit` library, `TestListExamples.java` which is tester code for student code, and `ListExamples.java` which is student code. The line from 32 to 34 all copies the files mentioned right before into the directory `tests`. The command-line option `-R` in line 34 stands for recursive and allows user to copy directories and their contents. 
 
 ``` 
-3   rm -rf student-submission 
-4   rm -rf tests 
+36  cd tests
 ``` 
->>  The line 3 and 4 removes the student-submission and tests directory. These lines are necessary to prevent the case where previous student code is overlapped with current student code. Here, the `rm` command is used to remove the files and directories, and `-rf` command-line option makes `rm` command to delete the directory and all of its contents without prompting confirmation. 
+>>  The line 36 makes current workig directory to be moved to `tests` directory. 
 
 ``` 
-3   rm -rf student-submission 
-4   rm -rf tests 
+38  javac -cp $CPATH *.java > compile-output.txt
 ``` 
->>  The line 3 and 4 removes the student-submission and tests directory. These lines are necessary to prevent the case where previous student code is overlapped with current student code. Here, the `rm` command is used to remove the files and directories, and `-rf` command-line option makes `rm` command to delete the directory and all of its contents without prompting confirmation. 
+>>  The line 38 compiles all the `java` files in `tests` directory and puts the results into `compile-output.txt`. Here, `$CPATH` is the path for `JUnit` library that we set at the first line. 
 
 ``` 
-3   rm -rf student-submission 
-4   rm -rf tests 
+41  if [[ $? -ne 0 ]]; then
+42      echo "Error: Compilation failed"
+43      echo "--------------------------------"
+44      exit 1
+45  fi
 ``` 
->>  The line 3 and 4 removes the student-submission and tests directory. These lines are necessary to prevent the case where previous student code is overlapped with current student code. Here, the `rm` command is used to remove the files and directories, and `-rf` command-line option makes `rm` command to delete the directory and all of its contents without prompting confirmation. 
+>>  The lines from 41 to 45 is to determine whether compilation was succeed or not. The line 41 `[[ $? -ne 0]]` is used to check if the previous command executed successfully or not. Here, `-ne` is a comparison operator that stands for not equal. `$?` is a special variable that holds the exit status of the last executed command. 
 
+``` 
+47  java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > test-output.txt
+``` 
+>>  The line 47 runs the tester file called `TestListExamples.java` and puts the results into `test-output.txt`. Here, `$CPATH` is the path for `JUnit` library that we set at the first line. 
+
+``` 
+49  if grep -q "FAILURES!!!" test-output.txt; then
+50      FAILURES=$(grep "Failures:" test-output.txt | awk '{print $NF}' | cut -d':' -f2)
+51      echo "$FAILURES Test(s) Failed among 3 Tests"
+52      echo "--------------------------------"
+53      PERCENTAGE=$(printf "%.2f" $(echo "(3-$FAILURES)/3*100" | bc -l))
+54      echo "Total Grade: $PERCENTAGE%"
+55  else
+56      echo "Test Succeed"
+57      echo "--------------------------------"
+58      echo "Total Grade: 100%"
+59  fi
+``` 
+>>  The lines from 49 to 59 checks whether the `JUnit` test was successful or not. The line 49 checks if `test-output.txt` has `FAILURES!!!` strings inside. It this is true, then it means test was failed. Otherwise, the test was succeed. If the test was failed, the lines from 50 to 54 is executed. The line 50 assigns the number of failures into `FAILURES` variable. 
 
 ### Testing 
 ![](/images/step5_1.png)
