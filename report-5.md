@@ -162,7 +162,7 @@ In this section, I'll explain how each line works and why it is useful.
 
 ### Testing 
 ![](/images/step5_1.png)
->   *Keys pressed*: ``` git<space>clone<space><command + v><enter> ```
+>   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3
 >>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
 
 ![](/images/step5_2.png)
