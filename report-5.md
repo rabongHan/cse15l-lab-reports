@@ -162,25 +162,24 @@ In this section, I'll explain how each line works and why it is useful.
 
 ### Testing 
 ![](/images/1.png)
->   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
->>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+>   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3 (has errors)
+>>  Clone finished successfully and file submission checked (correct file). However, 1 test was failed among 3 tests, so it shows total grade is 66.67%. 
 
 ![](/images/2.png)
->   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
->>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+>   https://github.com/ucsd-cse15l-f22/list-methods-corrected, which has the methods corrected (has no errors)
+>>  Clone finished successfully and file submission checked (correct file). Also, no tests was failed, so it shows total grade is 100%.
 
 ![](/images/3.png)
->   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
->>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+>   https://github.com/ucsd-cse15l-f22/list-methods-compile-error, which has a syntax error of a missing semicolon
+>>  Clone finished successfully and file submission checked (correct file). However, since there was syntax error in student code, it shows compilation failed error, and exits the bash. 
 
 ![](/images/4.png)
->   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
->>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+>   https://github.com/ucsd-cse15l-f22/list-methods-filename, which has a great implementation saved in a file with the wrong name
+>>  Clone finished successfully. However, when file submission was checked, it had incorrect file name. So, it shows error that alerts that the file submitted has incorrect name. 
 
 ![](/images/5.png)
->   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
->>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
-
+>   https://github.com/ucsd-cse15l-f22/list-methods-nested, which has a great implementation saved in a nested directory called `pa1`
+>>  Clone finished successfully. However, even though the file had correct name and implementation, the file was in nested directory. So, it shows error that alerts that the file is in nested directory. 
 
 ### Conclusion
-It took 1 minute and 25 seconds for me to finish all the steps. 
+Until week 8, this grading script hasn't worked properly. During this lab report, this grading script has been changed and worked properly. 
