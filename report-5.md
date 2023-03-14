@@ -161,22 +161,26 @@ In this section, I'll explain how each line works and why it is useful.
 >>  The lines from 49 to 59 checks whether the `JUnit` test was successful or not. The line 49 checks if `test-output.txt` has `FAILURES!!!` strings inside. It this is true, then it means test was failed. Otherwise, the test was succeed. If the test was failed, the lines from 50 to 54 is executed. The line 50 assigns the number of failures into `FAILURES` variable. The `grep` command first searches for the line contatining `Failures:` in the `test-output.txt` file. Then, `awk` command extracts the certain part. Here, `awk` command exxtracts the last part of the line using the command-line option called `$NF` which represents the last field of the current record. Then, `cut` command extracts only the number part. Here, `cut` command uses `-d` option which specifies the delimiter to split theline at the `":"` character and then uses `-f2` options to extract the second field which indicates strings after `":"` (number of failures). Then, calculate the grade percentage by `(3-number of failures)/3*100`, using math library called by `bc`. Here, we restricts the result into 2 floating decimal points using `printf "%.2f"`.
 
 ### Testing 
-![](/images/step5_1.png)
->   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3
+![](/images/1.png)
+>   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
 >>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
 
-![](/images/step5_2.png)
-* [1] `ls`
->   *Keys pressed*: ``` ls<enter> ```
->>  I typed `ls` to check if cloning worked well. `ls` command shows me the direcotry and file list, and I checked the folder called `lab7`.  
+![](/images/2.png)
+>   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
+>>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
 
-* [2] `cd lab7`
->   *Keys pressed*: ``` cd<space>lab7<enter> ```
->>  Then I moved my working directory to `lab7` folder by typing `cd lab7`.
+![](/images/3.png)
+>   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
+>>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
 
-* [3] `ls`
->   *Keys pressed*: ``` ls<enter> ```
->>  I typed `ls` to check which files and direcotries are inside the `lab7` folder. This was to see certain file's name later on step 6. 
+![](/images/4.png)
+>   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
+>>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+
+![](/images/5.png)
+>   https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3(which has errors)
+>>  I copied the **SSH** of forked repository called `lab7`. Then paste that after typing `git clone`. This allows me to clone my fork of the repository. 
+
 
 ### Conclusion
 It took 1 minute and 25 seconds for me to finish all the steps. 
