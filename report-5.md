@@ -68,11 +68,11 @@ fi
 The above script is the full line of grading script that I wrote. 
 In this section, I'll explain how each line works and why it is useful. 
 
->   ``` CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' ``` 
+``` CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' ``` 
 >>  This first line is for the JUnit library path. This grading script is using JUnit to test student code, so this line is necessary for using JUnit. 
 
->   ``` rm -rf student-submission 
->   rm -rf tests ``` 
+``` rm -rf student-submission 
+    rm -rf tests ``` 
 >>  This first line is for the JUnit library path. This grading script is using JUnit to test student code, so this line is necessary for using JUnit. 
 
 >   ``` CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' ``` 
